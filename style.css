@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imge/Screenshot_20261103_192342_com_openai_chatgpt_MainActivity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+body::selection {
+    color: black;
+}
+
+
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 340px;
+    height: 300px;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.512);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgb(225, 225, 255 / 0.25);
+    border-radius: 10px;
+    font-size: 20px;
+
+
+}
+
+form,
+input[type=submit] {
+    animation-name: color-trns;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+
+
+input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(171, 188, 204, 0.599);
+    color: blue;
+
+}
+
+input[type="text"] {
+    font-size: 17px;
+}
+
+
+.cascadia-mono-uniquifier {
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+input[type=submit] {
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s background-color;
+
+}
+
+input[type=submit]:hover {
+
+    color: black;
+    background-color: yellow;
+    animation: none;
+}
+
+form cursor {
+    color: yellow;
+}
+
+::selection {
+    background-color: yellow;
+}
+
+@keyframes color-trns {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    100% {
+        color: black;
+    }
+
+}
